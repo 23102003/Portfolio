@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gurpreet Kaur | Product Manager</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; background: linear-gradient(135deg, #eef2ff, #fef3c7); }
+    header { background:#0f172a; color:#fff; padding:40px 20px; text-align:center; position:relative; }
+    nav a { margin:0 12px; color:#cbd5f5; text-decoration:none; font-size:14px; }
+    nav a:hover { color:#fff; }
+
+    section { padding:40px; max-width:900px; margin:20px auto; background:#fff; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08); opacity:0; transform:translateY(30px); transition: all 0.6s ease; }
+    section.show { opacity:1; transform:translateY(0); }
+
+    h1 { margin-bottom:5px; }
+    h2 { color:#111827; margin-bottom:15px; }
+    h3 { color:#1f2937; }
+    p, ul { color:#374151; }
+    .subtitle { color:#cbd5f5; font-size:16px; }
+
+    .profile-img {
+      width:100px; height:100px; border-radius:50%; border:4px solid #fff;
+      position:absolute; top:50%; right:30px; transform:translateY(-50%); object-fit:cover;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .profile-img:hover { transform: translateY(-50%) scale(1.05); box-shadow:0 8px 20px rgba(0,0,0,0.2); }
+
+    .grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+
+    .card { background:#ffffff; padding:20px; border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-6px); box-shadow:0 12px 25px rgba(0,0,0,0.2); }
+
+    .btn { display:inline-block; padding:10px 20px; background:#0f172a; color:#fff; text-decoration:none; border-radius:6px; margin-top:10px; transition: background 0.3s ease, transform 0.2s ease; }
+    .btn:hover { background:#1e293b; transform: translateY(-2px); }
+
+    footer { text-align:center; padding:20px; color:#6b7280; }
+
+    @media(max-width:768px){ .grid-2{ grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Gurpreet Kaur</h1>
+  <p class="subtitle">Data-Driven Product Manager | IIT Delhi</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#case-study">Case Study</a>
+    <a href="#thinking">Product Thinking</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <img src="profile.jpg" alt="Profile" class="profile-img">
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>I am a Product Manager at JSW Group focused on building scalable, data-driven solutions.</p>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="card">
+    <h3>JSW Group | Product Manager</h3>
+    <ul>
+      <li>9% YoY growth</li>
+      <li>54% regional expansion</li>
+      <li>96% reporting automation</li>
+    </ul>
+  </div>
+</section>
+
+<section id="case-study">
+  <h2>Featured Case Study</h2>
+  <div class="card">
+    <h3>Improving Inventory Liquidation Efficiency</h3>
+
+    <p><strong>Problem:</strong><br>
+    High inventory ageing was locking working capital and slowing down sales cycles due to lack of real-time visibility.</p>
+
+    <p><strong>User Pain Points:</strong></p>
+    <ul>
+      <li>Sales teams lacked visibility into ageing stock</li>
+      <li>Manual tracking delayed decision-making</li>
+      <li>Slow liquidation cycles reduced revenue opportunities</li>
+    </ul>
+
+    <p><strong>Approach:</strong></p>
+    <ul>
+      <li>Analyzed stock ageing patterns across regions</li>
+      <li>Identified bottlenecks in inventory movement</li>
+      <li>Collaborated with operations and sales teams</li>
+    </ul>
+
+    <p><strong>Solution:</strong></p>
+    <ul>
+      <li>Built automated dashboards integrating stock ageing and NCO metrics</li>
+      <li>Enabled real-time tracking of slow-moving inventory</li>
+      <li>Designed targeted liquidation strategies</li>
+    </ul>
+
+    <p><strong>Impact:</strong></p>
+    <ul>
+      <li>Faster liquidation cycles</li>
+      <li>Improved decision-making speed</li>
+      <li>4% incremental revenue unlocked</li>
+    </ul>
+
+    <p><strong>Key Learning:</strong><br>
+    Visibility and timely data can directly unlock revenue without additional resources.</p>
+  </div>
+</section>
+
+<section id="thinking">
+  <h2>My Product Thinking</h2>
+  <div class="card">
+    <ul>
+      <li><strong>User First:</strong> Start with user pain points</li>
+      <li><strong>Data-Driven:</strong> Validate decisions with data</li>
+      <li><strong>Speed:</strong> Ship fast, iterate faster</li>
+      <li><strong>Trade-offs:</strong> Balance impact vs effort</li>
+    </ul>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid-2">
+    <div class="card">Fandango Analysis</div>
+    <div class="card">Anomaly Detection</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>📞 +91-7357198613</p>
+  <p>Email: gurpreetkaur8078@gmail.com</p>
+  <a class="btn" href="resume.pdf">Download Resume</a>
+  <br><br>
+  <a class="btn" href="https://www.linkedin.com/in/gurpreetkaur8078/">LinkedIn Profile</a>
+</section>
+
+<footer>
+  <p>© 2026 Gurpreet Kaur</p>
+</footer>
+
+<script>
+  const sections = document.querySelectorAll("section");
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add("show");
+    });
+  }, { threshold: 0.1 });
+  sections.forEach(section => observer.observe(section));
+</script>
+
+</body>
+</html>
